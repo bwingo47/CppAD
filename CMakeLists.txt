@@ -291,7 +291,7 @@ SET(system_include TRUE)
 # eigen
 IF( ${include_eigen} )
     pkgconfig_info(eigen ${system_include})
-    MESSAGE(STATUS "##################eigen_prefix is defined: ${DEGINED eigen_prefix}########################")
+    MESSAGE(STATUS "##################eigen_prefix is defined: ${DEFINED eigen_prefix}########################")
     IF( DEFINED eigen_prefix )
         # MESSAGE(STATUS "eigen_prefix is defined: ${eigen_prefix}")
         MESSAGE(FATAL_ERROR "include_eigen is true and eigen_prefix is defined")
